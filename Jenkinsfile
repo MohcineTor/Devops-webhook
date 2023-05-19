@@ -19,7 +19,7 @@ echo "here some testing the code"
 }
 stage("Deploy Code"){
 steps{
-sh 'docker-compose dow'
+sh 'docker-compose down'
 sh 'docker-compose -d up' 
 //sh 'docker stop 3ea0757c032b'
 //sh 'docker run -d -p 8000:8000 django-app:latest'
